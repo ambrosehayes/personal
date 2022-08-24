@@ -1,0 +1,72 @@
+/* Set base colours and attributes so is easier for duplicating across pages */
+:root {
+  /* Colours */
+  --light-green: #B5D6B2;
+  --dark-red: #53131E;
+  --grey-brown: #5A464C;
+  --cream: #FFFACC;
+  --blond: #FFEFBD;
+
+}
+
+
+body {
+  margin: 0;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  height: 87vh;
+  background-color: var(--light-green);
+  font-family: 'Playfair Display', serif;
+  margin-top: -5px;
+}
+
+.sides {
+  width: 50%;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.left {
+    text-align: left;
+}
+
+.left h1 {
+  color: white;
+  font-size: 9vw;
+  line-height: 80%;
+  margin-left: 2vw;
+  margin-top: 5vh;
+}
+
+.left ul {
+  list-style-image: url('assets/bulletpoint.svg');
+  margin-left: 2vw;
+}
+.right {
+  background-image: url('assets/pattern.svg');
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--grey-brown);
+  height: 14vh;
+  font-size: 7vh;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  list-style: none;
+  margin: 0;
+
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+
+}
