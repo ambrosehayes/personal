@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 .landing-container {
@@ -45,10 +46,62 @@ body {
 .left ul {
   list-style-image: url('assets/bulletpoint.svg');
   margin-left: 2vw;
+  list-style-position: inside;
+  padding-left: 0;
+  font-family: 'Red Hat Mono', monospace;
+  color: white;
+  font-size: 6vh;
 }
+
+
 .right {
   background-image: url('assets/pattern.svg');
+
 }
+
+
+.right img {
+  display: flex;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  border-bottom-left-radius: 12%;
+  border-bottom-right-radius: 12%;
+  width: 65vh;
+  height: 85vh;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 11vh;
+}
+
+
+.button {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 5vh;
+  margin-top: -85vh;
+  margin-left: -25vw;
+  text-transform: uppercase;
+  font-weight: 900;
+
+}
+
+.button svg {
+  width: 18vw;
+  height: 18vw;
+  transition: transform 1s;
+
+}
+
+.button svg:hover {
+  transform: rotate(10deg);
+}
+svg text {
+  font-size: 7.5vh;
+  fill: white;
+}
+
 
 .navbar {
   display: flex;
@@ -61,12 +114,15 @@ body {
   flex-direction: row;
   flex-flow: wrap;
   list-style: none;
-  margin: 0;
+  margin: 1.2vh;
+  padding-left: 2vw;
 
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-
+}
+.navbar img {
+  margin: 1vw;
 }
